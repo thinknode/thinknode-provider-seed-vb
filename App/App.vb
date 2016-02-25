@@ -59,7 +59,7 @@ Namespace App
         Public Shared Function AverageAge(list As Person()) As Double
             Dim running_avg As Double = 0
             Dim count As Integer = 0
-            For i As var = 0 To list.Length - 1
+            For i As Integer = 0 To list.Length - 1
                 running_avg = ((running_avg * count) + list(i).age) / (count + 1)
                 count += 1
             Next
